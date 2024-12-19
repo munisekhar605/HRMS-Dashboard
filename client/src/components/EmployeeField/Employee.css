@@ -1,0 +1,210 @@
+.employee-container {
+    height: 70%;
+    border: 2px solid rgb(218, 218, 218);
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 15px;
+    box-shadow: inset;
+    overflow-y: auto;
+    /* Enables vertical scroll if content overflows */
+    padding: 10px;
+    /* Optional: Adds some padding inside the container */
+}
+
+.employee-t-name-container {
+    background: linear-gradient(to bottom, #773fec, #45248a);
+    height: 10%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.employee-filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.employee-search-r {
+    margin: 20px;
+    border-radius: 15px;
+    outline: none;
+    padding: 3px;
+    font-size: larger;
+}
+
+.employee-add-button {
+    background-color: #773fec;
+    color: white;
+    padding: 7px;
+    border-radius: 15px;
+    border: solid transparent;
+}
+.employ-e-filter-item{
+    margin-top: 20px;
+    border: solid #773fec;
+    border-radius: 15px;
+    height: 35px;
+}
+.employee-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+    /* Ensures text wraps within the box */
+}
+
+.employee-item p {
+    margin: 0;
+    padding: 5px;
+    width: 12%;
+    /* Ensure all columns are evenly spaced */
+    text-align: center;
+}
+
+.employee-item a {
+    color: #45248a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.employee-item a:hover {
+    text-decoration: underline;
+}
+
+/* Add hover effect to employee item */
+.employee-item:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+/* Optional: Add padding and margin to the first column for better alignment */
+.employee-item p:first-child {
+    width: 5%;
+    /* Adjust the width for the Sr No */
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    .employee-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .employee-item p {
+        width: auto;
+        /* Remove fixed width for smaller screens */
+        text-align: left;
+        /* Align text to the left for better readability */
+        margin: 5px 0;
+    }
+
+    .employee-t-name-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .employee-t-name-container p {
+        width: auto;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+}
+
+
+.delete-button {
+    color: red;
+}
+
+.employee-item p:last-child {
+    width: 10%;
+    text-align: center;
+}
+
+/* Status Styling */
+.employee-item .rejected {
+    color: red;
+}
+
+.employee-item .pending {
+    color: orange;
+}
+
+.employee-item .selected {
+    color: green;
+}
+
+.employee-item .new {
+    color: black;
+}
+
+.status-dropdown {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+
+/* Popup Modal Styles */
+.popup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure it stays on top */
+}
+
+.popup-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.popup-modal-content button {
+    padding: 10px;
+    width: 48%;
+    margin-right: 4%;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.popup-modal-content button:last-child {
+    margin-right: 0;
+    background-color: #f44336;
+}
+
+.popup-modal-content button:hover {
+    opacity: 0.9;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,236 @@
+.candidates-container{
+    height: 70%;
+    border:2px solid rgb(218, 218, 218);
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 15px;
+    box-shadow:inset;
+}
+.candidates-t-name-container{
+    background: linear-gradient(to bottom, #773fec, #45248a);
+    height: 10%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    color:white;
+}
+.candidates-e-filter-item{
+    border-radius: 15px;
+    width: 40%;
+    height: 40px;
+    border: solid #45248a;
+    font-size: larger;
+    text-align: center;
+    margin: 10px;
+    margin-left: 3%;
+}
+.candidates-filter-container {
+    display: flex;
+    justify-content: space-between;
+}
+.candidates-filter-container{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.candidates-search-r{
+    margin: 20px;
+    border-radius: 15px;
+    outline: none;
+    padding: 3px;
+    font-size: larger;
+}
+.candidates-add-button{
+    background-color: #773fec;
+    color: white;
+    padding: 7px;
+    border-radius: 15px;
+    border: solid transparent;
+}
+
+.candidate-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.candidate-item p {
+    margin: 0;
+    padding: 5px;
+    width: 12%;  /* Ensure all columns are evenly spaced */
+    text-align: center;
+}
+
+.candidate-item a {
+    color: #45248a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.candidate-item a:hover {
+    text-decoration: underline;
+}
+
+/* Add hover effect to candidate item */
+.candidate-item:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+/* Optional: Add padding and margin to the first column for better alignment */
+.candidate-item p:first-child {
+    width: 5%; /* Adjust the width for the Sr No */
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    .candidate-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .candidate-item p {
+        width: auto;  /* Remove fixed width for smaller screens */
+        text-align: left;  /* Align text to the left for better readability */
+        margin: 5px 0;
+    }
+
+    .candidates-t-name-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .candidates-t-name-container p {
+        width: auto;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+}
+.candidates-container {
+    height: 70%;
+    border: 2px solid rgb(218, 218, 218);
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 15px;
+    box-shadow: inset;
+    overflow-y: auto;
+    /* Enables vertical scroll if content overflows */
+    padding: 10px;
+    /* Optional: Adds some padding inside the container */
+}
+
+.candidate-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+    /* Ensures text wraps within the box */
+}
+
+.candidate-item p {
+    margin: 0;
+    padding: 5px;
+    width: 12%;
+    /* Ensure all columns are evenly spaced */
+    text-align: center;
+}
+
+.candidate-item a {
+    color: #45248a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.candidate-item a:hover {
+    text-decoration: underline;
+}
+
+/* Add hover effect to candidate item */
+.candidate-item:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+/* Optional: Add padding and margin to the first column for better alignment */
+.candidate-item p:first-child {
+    width: 5%;
+    /* Adjust the width for the Sr No */
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    .candidate-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .candidate-item p {
+        width: auto;
+        /* Remove fixed width for smaller screens */
+        text-align: left;
+        /* Align text to the left for better readability */
+        margin: 5px 0;
+    }
+
+    .candidates-t-name-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .candidates-t-name-container p {
+        width: auto;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+}
+/* Delete button styling */
+.delete-button {
+    color: red;
+    
+}
+
+
+/* Optional: Adjust layout for the 'Action' column to make space for the button */
+.candidate-item p:last-child {
+    width: 10%;
+    text-align: center;
+}
+.candidate-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.candidate-item p {
+    margin: 0;
+}
+
+.candidate-item .rejected {
+    color: red;
+}
+
+.candidate-item .pending {
+    color: orange;
+}
+
+.candidate-item .selected {
+    color: green;
+}
+
+.candidate-item .new {
+    color: black;
+}
+
+.status-dropdown {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
